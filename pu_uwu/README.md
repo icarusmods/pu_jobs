@@ -88,3 +88,48 @@ setContainerProperties('uwubag', {
 		groups = {['uwucafe'] = 0},
 		zones = {{coords = vec3(-586.67333984375, -1061.9393310547, 22.492137908936), size = vec3(1, 1., 1), distance = 2, rotation = 70.0}},
 	},
+
+```
+## Shop - Add to ox_inventory/data/shops.lua
+```
+-- UWU Cafe Shop
+	UwU = {
+		name = 'UwU Cafe Cabinet',
+		groups = {['uwucafe'] = 0},
+inventory = {
+			{ name = 'batter', price = 0},
+			{ name = 'noodles', price = 0},
+			{ name = 'sodasyrup', price = 0, },
+			{ name = 'egg', price = 0 },
+			{ name = 'flour', price = 0 },
+			{ name = 'cocoapowder', price = 0 },
+			{ name = 'mshakeformula', price = 0, },
+			{ name = 'burgersodasyrup', price = 0, },
+
+		}, locations = {
+			vec3(-588.5399, -1067.3201, 22.3442)
+		}, targets = {
+			{ loc = vec3(-588.0399, -1067.3201, 22.3442), length = 2.5, width = 3.0, heading = 267.0, minZ = 20.5, maxZ = 24.0, distance = 6 }
+		}
+	},
+
+	UwU2 = {
+		name = 'UwU Bag Thingie',
+		groups = {['uwucafe'] = 0},
+inventory = {
+			{ name = 'uwubag', price = 0},
+			{ name = 'uwupurpleplush', price = 0},
+			{ name = 'uwubrownplush', price = 0},
+			{ name = 'uwublueplush', price = 0},
+			{ name = 'uwupinkrareplush', price = 0},
+			{ name = 'uwuredplush', price = 0},
+			{ name = 'uwugreenrareplush', price = 0},
+			{ name = 'uwugreenplush', price = 0},
+
+		}, locations = {
+			vec3(-585.7916, -1055.9081, 22.3442)
+		}, targets = {
+			{ loc = vec3(-585.7916, -1055.9081, 22.3442), length = 2.5, width = 3.0, heading = 5.0, minZ = 20.5, maxZ = 24.0, distance = 6 }
+
+		}
+	},
